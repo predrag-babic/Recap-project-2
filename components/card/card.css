@@ -29,6 +29,10 @@
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .card__answer--active {
   display: block;
 }

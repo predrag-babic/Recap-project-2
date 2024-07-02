@@ -1,5 +1,5 @@
 @import "./global.css";
-
+@import "./form.css";
 @import "./components/bookmark/bookmark.css";
 @import "./components/card-list/card-list.css";
 @import "./components/card/card.css";

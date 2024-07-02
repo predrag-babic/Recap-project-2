@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
   </head>
-  <body>
+  <body data-js="body">
     <header class="header">
       <h1 class="header__title">Quiz-App</h1>
     </header>
@@ -25,14 +26,19 @@
             <button class="card__button-answer" type="button">
               Show answer
             </button>
-            <p class="card__answer">Mark Hamill</p>
+            <p class="card__answer hidden">Mark Hamill</p>
             <ul class="card__tag-list">
               <li class="card__tag-list-item">#kingdomheart</li>
               <li class="card__tag-list-item">#mastereraqus</li>
               <li class="card__tag-list-item">#english voices</li>
             </ul>
             <div class="card__button-bookmark">
-              <button class="bookmark" aria-label="bookmark" type="button">
+              <button
+                class="bookmark"
+                aria-label="bookmark"
+                type="button"
+                data-js="bookmark-button1"
+              >
                 <svg
                   class="bookmark__icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -55,10 +61,16 @@
               Daniel Radcliffe became a global star in the film industry due to
               his performance in which film franchise?
             </h2>
-            <button class="card__button-answer" type="button">
+            <button
+              class="card__button-answer"
+              type="button"
+              data-js="button-answer2"
+            >
               Show answer
             </button>
-            <p class="card__answer card__answer--active">Harry Potter</p>
+            <p class="card__answer2 hidden card__answer--active">
+              Harry Potter
+            </p>
             <ul class="card__tag-list">
               <li class="card__tag-list-item">#danielradcliffe</li>
               <li class="card__tag-list-item">#hewhomustnotbenamed</li>
@@ -69,6 +81,7 @@
                 class="bookmark bookmark--active"
                 aria-label="bookmark"
                 type="button"
+                data-js="bookmark-button2"
               >
                 <svg
                   class="bookmark__icon"
@@ -92,17 +105,26 @@
               Which former US president was nicknamed &quot;Teddy&quot; after he
               refused to shoot a defenseless black bear?
             </h2>
-            <button class="card__button-answer" type="button">
+            <button
+              class="card__button-answer"
+              type="button"
+              data-js="button-answer3"
+            >
               Show answer
             </button>
-            <p class="card__answer">Theodore Roosevelt</p>
+            <p class="card__answer3 hidden">Theodore Roosevelt</p>
             <ul class="card__tag-list">
               <li class="card__tag-list-item">#usa</li>
               <li class="card__tag-list-item">#president</li>
               <li class="card__tag-list-item">#teddybear</li>
             </ul>
             <div class="card__button-bookmark">
-              <button class="bookmark" aria-label="bookmark" type="button">
+              <button
+                class="bookmark"
+                aria-label="bookmark"
+                type="button"
+                data-js="bookmark-button3"
+              >
                 <svg
                   class="bookmark__icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -157,6 +179,24 @@
             </svg>
           </a>
         </li>
+
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="./form.html"
+            aria-label="go to form page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewbox="0 0 24 24"
+              width="24px"
+            >
+              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+            </svg>
+          </a>
+        </li>
+
         <li class="navigation__list-item">
           <a
             class="navigation__link"
